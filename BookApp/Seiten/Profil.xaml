@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:charts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"           
              x:Class="BookApp.Seiten.Profil"
              Padding="10,10,10,10"
              WidthRequest="375" HeightRequest="812">
@@ -109,7 +108,7 @@
 
         <Label Text="Leseziel" VerticalOptions="Center" HorizontalOptions="Start" Padding="0,30,0,10"/>
 
-        <charts:ChartView Chart="{Binding DonutChart}" />
+        
         
     </VerticalStackLayout>
 </ContentPage>
