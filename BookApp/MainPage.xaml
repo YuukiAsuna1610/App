@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Padding="10,10,10,10"
+             x:Class="BookApp.MainPage"
+             WidthRequest="375" HeightRequest="812">
+
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a race car number eight" />
+         
+            <Button
+                x:Name="BuchButton"
+                Text="Buch" 
+                Clicked="OnBuchClicked"
+                HorizontalOptions="Fill" />
+
+            <Button
+                x:Name="ProfilButton"
+                Text="Profil" 
+                Clicked="OnProfilClicked"
+                HorizontalOptions="Fill" />
+
+            <CheckBox />
+
+            <Switch IsToggled="true"/>
+
+            <TimePicker Time="4:15:26" />
+
+
+            <StackLayout>
+                <StackLayout Orientation="Horizontal" Spacing="60">
+                    <Label Text="Gelesen vom" />
+                    <Label Text="Gelesen bis" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Spacing="25">
+                    <DatePicker MinimumDate="01/01/1900"
+                        MaximumDate="12/31/2025"
+                        Date="06/21/2024" />
+                    
+                    <DatePicker MinimumDate="01/01/1900"
+                        MaximumDate="12/31/2025"
+                        Date="06/21/2024" />
+                </StackLayout>
+            </StackLayout>
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

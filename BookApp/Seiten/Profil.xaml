@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:charts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             x:Class="BookApp.Seiten.Profil"
+             Padding="10,10,10,10"
+             WidthRequest="375" HeightRequest="812">
+    <VerticalStackLayout>
+       
+            <StackLayout Orientation="Horizontal" Spacing="0">
+
+                <BoxView Color="CornflowerBlue" CornerRadius="100"
+                    WidthRequest="100" HeightRequest="100"
+                    VerticalOptions="Center" HorizontalOptions="Start" />
+
+            <Grid HorizontalOptions="Fill">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <!-- Erstes StackLayout -->
+                <StackLayout Grid.Row="0" Grid.Column="0" Orientation="Horizontal">
+                    <Label Text="Bücher" Padding="10,20,0,10"/>
+                    <Label Text="Follower" Padding="10,20,0,10"/>
+                    <Label Text="Gefolgt" Padding="10,20,0,10"/>
+                </StackLayout>
+
+                <!-- Zweites StackLayout -->
+                <StackLayout Grid.Row="1" Grid.Column="0" Orientation="Horizontal" >
+                    <Label Text="489" Padding="10,0,0,10"/>
+                    <Label Text="10" Padding="10,0,0,10"/>
+                    <Label Text="89" Padding="10,0,0,10"/>
+                </StackLayout>
+
+            </Grid>
+
+
+
+        </StackLayout>
+        
+        
+        <Label Text="Name" VerticalOptions="Center" HorizontalOptions="Start" Padding="0,10,0,10"/>
+        
+        <StackLayout>
+            <StackLayout Orientation="Horizontal" Spacing="28">
+                <Label Text="Ungelesen" />
+                <Label Text="Am lesen" />
+                <Label Text="Gelesen" />
+                <Label Text="Wunschliste" />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" Spacing="10">
+                
+                <BoxView Color="CornflowerBlue" CornerRadius="0"
+                    WidthRequest="80" HeightRequest="100"
+                    VerticalOptions="Center" HorizontalOptions="Start"/>
+
+                <BoxView Color="CornflowerBlue" CornerRadius="0"
+                    WidthRequest="80" HeightRequest="100"
+                    VerticalOptions="Center" HorizontalOptions="Start"/>
+
+                <BoxView Color="CornflowerBlue" CornerRadius="0"
+                    WidthRequest="80" HeightRequest="100"
+                    VerticalOptions="Center" HorizontalOptions="Start"/>
+
+                <BoxView Color="CornflowerBlue" CornerRadius="0"
+                    WidthRequest="80" HeightRequest="100"
+                    VerticalOptions="Center" HorizontalOptions="Start"/>
+                
+            </StackLayout>
+        </StackLayout>
+
+        <Label Text="Bücherregale" VerticalOptions="Center" HorizontalOptions="Start" Padding="0,30,0,10"/>
+        
+        <StackLayout>
+            <StackLayout Orientation="Horizontal" Spacing="51">
+                <Label Text="Name" />
+                <Label Text="Name" />
+                <Label Text="Name" />
+                <Label Text="Name" />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" Spacing="10">
+
+                <BoxView Color="CornflowerBlue" CornerRadius="0"
+                    WidthRequest="80" HeightRequest="100"
+                    VerticalOptions="Center" HorizontalOptions="Start"/>
+
+                <BoxView Color="CornflowerBlue" CornerRadius="0"
+                    WidthRequest="80" HeightRequest="100"
+                    VerticalOptions="Center" HorizontalOptions="Start"/>
+
+                <BoxView Color="CornflowerBlue" CornerRadius="0"
+                    WidthRequest="80" HeightRequest="100"
+                    VerticalOptions="Center" HorizontalOptions="Start"/>
+
+                <BoxView Color="CornflowerBlue" CornerRadius="0"
+                    WidthRequest="80" HeightRequest="100"
+                    VerticalOptions="Center" HorizontalOptions="Start"/>
+
+            </StackLayout>
+        </StackLayout>
+
+        <Label Text="Leseziel" VerticalOptions="Center" HorizontalOptions="Start" Padding="0,30,0,10"/>
+
+        <charts:ChartView Chart="{Binding DonutChart}" />
+        
+    </VerticalStackLayout>
+</ContentPage>

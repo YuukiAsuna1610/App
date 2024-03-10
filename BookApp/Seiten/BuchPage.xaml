@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BookApp.Seiten.BuchPage"
+             Padding="10,10,10,10"
+             WidthRequest="375" HeightRequest="812">
+    <VerticalStackLayout>
+
+        <BoxView Color="CornflowerBlue"
+             CornerRadius="10"
+             WidthRequest="160"
+             HeightRequest="160"
+             VerticalOptions="Center"
+             HorizontalOptions="Start"/>
+
+        <Label 
+            Text="Titel"
+            VerticalOptions="Center" 
+            HorizontalOptions="Start" />
+
+        <Entry x:Name="Titel"
+           Placeholder="Enter text"/>
+
+
+        <Picker x:Name="ebookPicker"
+            Title="Ebook Plattform">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Kindle</x:String>
+                    <x:String>Tolino</x:String>
+                    <x:String>Apple Books</x:String>
+                    <x:String>Skoobe</x:String>
+                    <x:String>Datei</x:String>
+                    <x:String>Epub</x:String>
+                    <x:String>PDF</x:String>
+                    <x:String>Mobi</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+
+        <Picker x:Name="audibookPicker"
+            Title="Hörbuch Plattform">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Spotify</x:String>
+                    <x:String>CD</x:String>
+                    <x:String>Tolino</x:String>
+                    <x:String>Audible</x:String>
+                    <x:String>Deezer</x:String>
+                    <x:String>BookBeat</x:String>
+                    <x:String>Cliq</x:String>
+                    <x:String>Podimo</x:String>
+                    <x:String>Napster</x:String>
+                    <x:String>Storytel</x:String>
+                    <x:String>Nextory</x:String>
+                    <x:String>Audioteka</x:String>
+                    <x:String>Skoobe</x:String>
+                    <x:String>AppleBooks</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+
+    </VerticalStackLayout>
+</ContentPage>
