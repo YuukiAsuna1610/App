@@ -3,8 +3,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MauiBookApp.Models
 {
-    [Table("PublisherTable")]
-    public class Verlag
+    [Table("PublisherDB")]
+    public class Publisher
     {
         [Key]
         [Column("Id")]
@@ -15,7 +15,7 @@ namespace MauiBookApp.Models
         [MaxLength(200)]
         public string Name { get; set; }
 
-        public Verlag() 
+        public Publisher() 
         { 
         }
     }
